@@ -1,2 +1,2 @@
 # projetoSass
- meu prieeiro curso de sass na alura
+ meu primeiro curso de sass na alura!
