@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*estes são os placeholders selector*/
+.main .sidebar__post-title {
+  text-decoration: none; }
+
+.main .sidebar__post-title:hover {
+  text-decoration: underline; }
+
+/*estes são os mixins*/
 .header {
   font-family: Arial, Helvetica, sans-serif; }
   .header__logo {
@@ -115,6 +123,40 @@ se refere ao centro da pagina*/
     margin-bottom: 10px; }
     .main__a:hover {
       color: #a050be; }
+  .main__sidebar {
+    width: 25%;
+    padding: 40px 10px; }
+  .main .sidebar__top {
+    border: 1pc solid #eaeaeb;
+    padding: 15px 20px; }
+  .main .sidebar__title {
+    background-color: #fabe50;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0;
+    letter-spacing: 1.5px; }
+  .main .sidebar__post {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .main .sidebar__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 0; }
+    .main .sidebar__list:not(:last-child) {
+      border-bottom: 1px dashed #eaeaeb; }
+  .main .sidebar__img {
+    width: 40%; }
+  .main .sidebar__details {
+    width: 50%; }
+  .main .sidebar__post-title {
+    font-size: 14px;
+    color: #a050be; }
+  .main .sidebar__post-date {
+    font-size: 12px;
+    margin: 5px 0 0 0; }
 
 /*este trecho de codigo se refere
  ao rodapé da pagina*/
@@ -131,6 +173,7 @@ se refere ao centro da pagina*/
   .footer__txt {
     font-size: 14px; }
 
+/*inicio da pagina about*/
 .about {
   width: 80%;
   margin: 0 auto 40px;
@@ -176,7 +219,7 @@ se refere ao centro da pagina*/
     justify-content: center;
     flex-wrap: wrap;
     align-items: center; }
-  .about__img2 {
+  .about__img-description {
     width: 45%; }
   .about__txt {
     width: calc(100% - 45%); }
