@@ -1,53 +1,296 @@
-/*
-Error: Invalid CSS after "...-content, -cnt)": expected "}", was "align-items: ce..."
-        on line 399 of scss/style.scss
+@charset "UTF-8";
+/*estes são os placeholders selector*/
+.main .sidebar__post-title, .article .breadcrumb__link {
+  text-decoration: none; }
 
-394:         width: 100%;
-395:     }
-396: 
-397:     &__details {
-398:         @include flx(justify-content, -cnt)
-399:         align-items: center;
-400:     }
-401: 
-402:     &__data{
-403:         margin: 0 10px;
-404:         font-size: 12px;
+.main .sidebar__post-title:hover, .about .breadcrumb__link:hover, .article .breadcrumb__link:hover {
+  text-decoration: underline; }
 
-Backtrace:
-scss/style.scss:399
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:690:in `block'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-D:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...-content, -cnt)\": expected \"}\", was \"align-items: ce...\"\A         on line 399 of scss/style.scss\A \A 394:         width: 100%;\A 395:     }\A 396: \A 397:     &__details {\A 398:         @include flx(justify-content, -cnt)\A 399:         align-items: center;\A 400:     }\A 401: \A 402:     &__data{\A 403:         margin: 0 10px;\A 404:         font-size: 12px;"; }
+/*estes são os mixins*/
+/* inicio do header*/
+.header {
+  font-family: Arial, Helvetica, sans-serif; }
+  .header__logo {
+    text-align: center; }
+  .header__img {
+    max-width: 350px; }
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #eaeaeb;
+  border-bottom: 1px solid #eaeaeb;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 20px 0; }
+  @media (max-width: 767.98px) {
+    .menu__list {
+      width: 90%;
+      padding: 15px 0;
+      flex-wrap: wrap; } }
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    .menu__list {
+      width: 80%;
+      padding: 20px 0; } }
+  @media (min-width: 1200px) {
+    .menu__list {
+      width: 80%;
+      padding: 20px 0; } }
+.menu__links {
+  position: relative; }
+  .menu__links:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -3px;
+    margin: auto;
+    height: 15px;
+    width: 1px;
+    background-color: #eaeaeb; }
+.menu__link {
+  padding: 0 25px;
+  color: #464646; }
+  .menu__link:hover {
+    color: #a050be; }
+
+/*este trecho de codigo
+se refere ao centro da pagina*/
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif; }
+  .main__content {
+    width: 70%;
+    padding: 40px 8px; }
+  .main__post {
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; }
+  .main__title {
+    text-decoration: none;
+    font-size: 22px;
+    color: #464646;
+    letter-spacing: 1.5; }
+    .main__title:hover {
+      color: #a050be; }
+  .main__subtitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .main__date {
+    margin: 0 10px;
+    font-size: 12px;
+    font-style: italic; }
+  .main__tag {
+    font-size: 14px;
+    padding: 5px 7px;
+    color: #a050be;
+    border: 1px solid #a050be;
+    margin: 0 10px; }
+  .main__details {
+    border: 1px solid #eaeaeb; }
+  .main__img {
+    width: 100%; }
+  .main__description {
+    padding: 40px 0 25px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px; }
+  .main__btn {
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 1.5;
+    color: #a050be;
+    background-color: #fabe50;
+    padding: 10px 20px;
+    transition: .3s; }
+    .main__btn:hover {
+      color: #fabe50;
+      background-color: #a050be; }
+  .main__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eaeaeb;
+    margin-top: 30px; }
+  .main__author {
+    width: 50%;
+    border-right: 1px solid #eaeaeb; }
+  .main__p {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #464646; }
+  .main__comments {
+    width: 50%; }
+  .main__a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #464646;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .main__a:hover {
+      color: #a050be; }
+  .main__sidebar {
+    width: 25%;
+    padding: 40px 10px; }
+  .main .sidebar__top {
+    border: 1pc solid #eaeaeb;
+    padding: 15px 20px; }
+  .main .sidebar__title {
+    background-color: #fabe50;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0;
+    letter-spacing: 1.5px; }
+  .main .sidebar__post {
+    padding: 0;
+    list-style: none;
+    margin: 0; }
+  .main .sidebar__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 0; }
+    .main .sidebar__list:not(:last-child) {
+      border-bottom: 1px dashed #eaeaeb; }
+  .main .sidebar__img {
+    width: 40%; }
+  .main .sidebar__details {
+    width: 50%; }
+  .main .sidebar__post-title {
+    font-size: 14px;
+    color: #a050be; }
+  .main .sidebar__post-date {
+    font-size: 12px;
+    margin: 5px 0 0 0; }
+
+/*este trecho de codigo se refere
+ ao rodapé da pagina*/
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+  .footer__logo {
+    max-width: 100px; }
+  .footer__txt {
+    font-size: 14px; }
+
+/*inicio da pagina about*/
+.about {
+  width: 80%;
+  margin: 0 auto 40px;
+  font-family: Arial, Helvetica, sans-serif; }
+  .about__title {
+    background-color: #eaeaeb;
+    text-align: center;
+    padding: 20px; }
+  .about__h1 {
+    font-size: 22px;
+    color: #464646;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0; }
+  .about .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .about .breadcrumb__link {
+      font-size: 12px;
+      text-decoration: none;
+      color: #464646; }
+      .about .breadcrumb__link:hover {
+        color: #a050be; }
+    .about .breadcrumb__img {
+      width: 11px;
+      margin: 8px; }
+  .about__img {
+    max-width: 100%;
+    margin-bottom: 20px; }
+  .about__intro {
+    font-weight: 100;
+    color: #464646;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 16px; }
+  .about__split {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; }
+  .about__img-description {
+    width: 45%; }
+  .about__txt {
+    width: calc(100% - 45%); }
+  .about__p {
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #464646; }
+
+/*estilo article*/
+.article {
+  width: 80%;
+  margin: 0 auto 40px;
+  font-family: Arial, Helvetica, sans-serif; }
+  .article__title {
+    background-color: #eaeaeb;
+    text-align: center;
+    padding: 20px; }
+  .article__h1 {
+    font-size: 22px;
+    color: #464646;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0; }
+  .article .breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .article .breadcrumb__link {
+      font-size: 12px;
+      color: #464646; }
+      .article .breadcrumb__link:hover {
+        color: #a050be; }
+    .article .breadcrumb__img {
+      width: 11px;
+      margin: 8px; }
+  .article__img {
+    margin-bottom: 20px;
+    width: 100%; }
+  .article__details {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .article__data {
+    margin: 0 10px;
+    font-size: 12px;
+    font-style: italic; }
+  .article__tag {
+    font-size: 14px;
+    padding: 5px 7px;
+    color: #a050be;
+    border: 1px solid #a050be;
+    margin: 0 10px; }
+  .article__content {
+    font-weight: 100;
+    font-size: 14px;
+    color: #464646;
+    padding: 10px 20px; }
+
+/*# sourceMappingURL=style.css.map */
